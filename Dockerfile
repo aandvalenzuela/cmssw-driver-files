@@ -7,7 +7,7 @@ RUN dnf install -y rpm-build
 RUN dnf install -y git
 RUN dnf install -y python36 nspr nss rsync
 
-RUN dnf install -y bash tcsh
+RUN dnf install -y bash tcsh wget
 RUN dnf install -y glibc libxcrypt openssl-libs libcom_err krb5-libs ncurses-libs perl perl-libs libX11 readline tcl tk mesa-libGLU libglvnd-glx libglvnd-opengl libXext libXft libXpm
 
 RUN dnf install -y glibc-devel libxcrypt-devel openssl-devel libcom_err-devel krb5-devel ncurses-devel perl-devel libX11-devel readline-devel tcl-devel tk-devel mesa-libGLU-devel libglvnd-devel libXext-devel libXft-devel libXpm-devel

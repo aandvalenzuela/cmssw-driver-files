@@ -19,6 +19,7 @@ RUN dnf install -y libdrm perl-File-Which perl-Scalar-List-Utils perl-Term-ANSIC
 RUN dnf install -y perl-IO-Compress
 
 RUN dnf install -y java-devel
+RUN dnf install -y libtool-ltdl-devel libtool
 
 RUN useradd cmsbuild
 USER cmsbuild

@@ -18,9 +18,8 @@ RUN dnf install -y perl-Carp perl-PathTools perl-Data-Dumper perl-Errno perl-Exp
 RUN dnf install -y libdrm perl-File-Which perl-Scalar-List-Utils perl-Term-ANSIColor perl-CGI perl-DBI perl-Encode perl-Memoize perl-Storable perl-Time-HiRes perl-Time-Local perl-YAML
 RUN dnf install -y perl-IO-Compress
 
-RUN dnf install -y java-devel
+RUN dnf install -y java-1.8.0-openjdk-devel java-11-openjdk-devel
 RUN dnf install -y libtool-ltdl-devel libtool
-RUN dnf install -y lhapdf
 
 RUN useradd cmsbuild
 USER cmsbuild

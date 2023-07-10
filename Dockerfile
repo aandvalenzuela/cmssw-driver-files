@@ -20,7 +20,7 @@ RUN dnf install -y perl-IO-Compress
 
 RUN dnf install -y java-devel
 RUN dnf install -y libtool-ltdl-devel libtool
-RUN dnf install -y lhapdf-devel
+RUN dnf install -y lhapdf
 
 RUN useradd cmsbuild
 USER cmsbuild

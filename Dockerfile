@@ -19,5 +19,7 @@ RUN dnf install -y perl-IO-Compress
 RUN dnf install -y java-1.8.0-openjdk-devel java-11-openjdk-devel
 RUN dnf install -y libtool
 
+RUN dnf install -y gcc-c++
+
 RUN useradd cmsbuild
 USER cmsbuild
